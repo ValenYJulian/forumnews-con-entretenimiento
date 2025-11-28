@@ -8,6 +8,9 @@ import ProfileScreen from './ProfileScreen';
 import DeportesScreen from './DeportesScreen';
 import NoticiasScreen from './NoticiasScreen';
 import EntretenimientoScreen from './EntretenimientoScreen';
+import LoginScreen from "./LoginScreen";
+import RegisterScreen from "./RegisterScreen";
+
 
 function HomeScreen() {
   return (
@@ -29,14 +32,6 @@ function HomeScreen() {
         source={{ uri: 'https://sm.ign.com/t/ign_latam/screenshot/default/jcg_rmkw.1280.jpg' }}
         style={styles.image}
       />
-    </ScrollView>
-  );
-}
-
-function Entretenimiento() {
-  return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.text}>Esta es la pantalla de Entretenimiento</Text>
     </ScrollView>
   );
 }
@@ -73,6 +68,8 @@ export default function App() {
         <Drawer.Screen name="Deportes" component={DeportesScreen} />
         <Drawer.Screen name="Dolar" component={DolarScreen} />
         <Drawer.Screen name="Entretenimiento" component={EntretenimientoScreen} />
+        <Drawer.Screen name="Login" component={LoginScreen} />
+        <Drawer.Screen name="Register" component={RegisterScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

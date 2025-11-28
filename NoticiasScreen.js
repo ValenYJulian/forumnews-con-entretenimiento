@@ -117,8 +117,6 @@ function DetalleNoticia({ route }) {
         </View>
       ))}
 
-      {/* Autor */}
-      <Text style={styles.autor}>Publicado por: {noticia.autor}</Text>
     </ScrollView>
   );
 }
